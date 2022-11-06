@@ -139,10 +139,10 @@ svg.material-icons:not(:last-child) {
   margin-left: 60px;
 }
 
-/* .container {
+.container {
   font-size: medium;
   color: #eee;
-} */
+}
 
 svg#rocket {
   width: 80px;

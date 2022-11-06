@@ -1,3 +1,13 @@
-<div class="container">
-  <app-menu></app-menu>
+<div class="container mt-5">
+  <asl-google-signin-button *ngIf="!user"></asl-google-signin-button>
+  <div *ngIf="user">
+    You are logged in
+    <h5>{{ user.name }}</h5>
+    <p>{{ user.email }}</p>
+    <img
+      class="rounded"
+      style="width: 3%; height: auto"
+      src="{{ user.photoUrl }}"
+    />
+  </div>
 </div>
